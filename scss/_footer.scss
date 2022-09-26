@@ -1,0 +1,81 @@
+
+
+
+.footer{
+   background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+   padding-top: 50px;
+   padding-bottom: 32px;
+   &__logo,
+   &__links,
+   &__registration,
+   &__bottom{
+      display: flex;
+      justify-content: center;
+   }
+   &__logotype{
+      width: 129px;
+   }
+   &__links{
+      padding-top: 30px;
+      padding-bottom: 30px;
+      flex-direction: column;
+      @media (min-width: 1024px) {
+         padding: 0;
+         flex-direction: row;
+      }
+   }
+   &__link{
+      color: $grey-color;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 28px;
+      text-align: center;
+      padding-bottom: 15px;
+      &:last-child{
+         padding-bottom: 0;
+      }
+      @media (min-width:1024px) {
+         padding-bottom: 0;
+         padding-right: 50px;
+         &:last-child {
+            padding-right: 0;
+         }
+      }
+   }
+   &__top{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+      @media (min-width: 1024px) {
+         flex-direction: row;
+         justify-content: space-between;
+      }
+   }
+   &__registration{
+      padding: 11px 15px;
+   }
+   &__register{
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 30px;
+      color: $grey-color;
+      padding: 4px 28.5px 2px 20px;
+   }
+   @media (min-width:1024px) {
+      background: none;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      &__block{
+         padding: 50px 100px 62px;
+
+         background: linear-gradient(90deg, #E6E9F0 0%, #EEF1F5 100%);
+      }
+   }
+   @media (min-width:1440px) {
+      &__block{
+         padding-left: 200px;
+         padding-right: 173px;
+      }
+   }
+}
